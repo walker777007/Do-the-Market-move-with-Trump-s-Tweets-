@@ -29,7 +29,7 @@ fig10 = plt.figure(10)
 ax10 = fig10.add_subplot(111)
 ax10=sns.heatmap(corr, 
         xticklabels=corr.columns,
-        yticklabels=corr.columns)
+        yticklabels=corr.columns,annot=True)
 ax10.axis('equal')
 ax10.set_title('Correlation Heatmap')
 plt.tight_layout()
@@ -53,7 +53,7 @@ fig11 = plt.figure(11)
 ax11 = fig11.add_subplot(111)
 ax11=sns.heatmap(corr, 
         xticklabels=corr.columns,
-        yticklabels=corr.columns)
+        yticklabels=corr.columns,annot=True)
 ax11.axis('equal')
 ax11.set_title('Correlation Heatmap')
 plt.tight_layout()
@@ -84,7 +84,7 @@ fig12 = plt.figure(12)
 ax12 = fig12.add_subplot(111)
 ax12=sns.heatmap(corr, 
         xticklabels=corr.columns,
-        yticklabels=corr.columns)
+        yticklabels=corr.columns,annot=True)
 ax12.axis('equal')
 ax12.set_title('Correlation Heatmap')
 plt.tight_layout()
