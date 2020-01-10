@@ -1,4 +1,6 @@
+<p align="center">
 <img src="images/crazy-trump.jpg" width="400" height="200"> <img src="images/downarrow.jpg" width="400" height="200">
+</p>
 
 # Does the Market Move with Trump's Tweets?
 **Identifying how the market correlates with the content and volume of Trump's tweets**
