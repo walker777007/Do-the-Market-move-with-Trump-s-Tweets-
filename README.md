@@ -50,4 +50,4 @@ On August 23rd, at 10:57am, Trump proceeded to go on a twitter storm about the t
 
 Here we can see an illustration of that fateful moment.
 
-<img src="plots/trumpaugust23.png" width="2185" height="1041">
+![](images/trumpaugust23.png)
