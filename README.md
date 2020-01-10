@@ -1,6 +1,5 @@
-![](images/crazy-trump.jpg)
-![](images/downarrow.jpg)
-<img src="images/downarrow.jpg" width="200" height="200" />
+<img src="images/crazy-trump.jpg" width="500" height="250" />
+<img src="images/downarrow.jpg" width="500" height="250" />
 
 # Does the Market Move with Trump's Tweets?
 **Identifying how the market correlates with the content and volume of Trump's tweets**
