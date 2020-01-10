@@ -121,7 +121,7 @@ It appears that looking at daily effects are too random and arbitrary for severa
  VIX High simply denotes the maximum VIX value in that week, which can be understood as the maximum investor fear for the week.  As well, instead of simply looking at the absolute numbers of tweets that were about the trade war or federal reserve, I decided to look at the percentage of tweets that week that were about those subjects.
 
 
-This had an immediate noticeable effect on the correlation, which can be seen below.  The correlation coefficients for all 3 indexes were roughly about the same for the percentage of tweets about the trade war.
+This had an immediate noticeable effect on the correlation, which can be seen below.  The correlation coefficients for all 3 indexes were roughly about the same for the percentage of tweets about the trade war: 0.24,0.27,0.26.
 
 <p align="center">
 <img src="plots/weekly_keyword_volatility_correlation_heatmap.png" width="800" height="550">
@@ -139,7 +139,10 @@ My null hypothesis is that weeks with a high percentage of tweets about the trad
 <img src="images/hypotheses.png" width="290" height="46">
 </p>
 
-As we can see in all 5 cases below, we can reject the null hyothesis since our p values are all less than α=0.05.
+### Mann Whitney U Test
+
+None of the distributions are normal, so in order to calculate our p values we have to use the [Mann Whitney U Test](https://en.wikipedia.org/wiki/Mann%E2%80%93Whitney_U_test).
+As we can see in all 5 cases below, we can reject the null hypothesis since our p values are all less than α=0.05.
 <p align="center">
 <img src="plots/Weekly_S&P500_Hypothesis_Test.png" width="800" height="550">
 <img src="plots/Weekly_VIX_Hypothesis_Test.png" width="800" height="550">
@@ -147,3 +150,10 @@ As we can see in all 5 cases below, we can reject the null hyothesis since our p
 <img src="plots/Fed_Weekly_S&P500_Hypothesis_Test.png" width="800" height="550">
 <img src="plots/Fed_Weekly_VIX_Hypothesis_Test.png" width="800" height="550">
 </p>
+
+## Conclusion
+
+Correlation != Causation.  Unfortunately I can’t say that Trump’s tweets are actually affecting market movement, seemingly outside of certain singular cases.  I can’t tell you when to buy or sell based on what he is saying, sadly.  However, it does appear that when Trump tweets a significant amount about the Trade War or about the Federal Reserve, the markets are more volatile.  Investors seem to be more “scared” when he tweets a lot.  Are they scared of his tweets or are the tweets in response to the fear?
+
+Some important questions that could explain the movement:
+Are the volume of his tweets representing new policy? Is he tweeting in response to poor market activity? Have investors become jaded enough that they are less concerned with what Trump is saying?
