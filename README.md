@@ -12,7 +12,7 @@
 
 * [Motivation](#motivation)
 * [Data Exploration](#data-exploration)
-  * [Pipeline](#pipeline-source)
+  * [Pipeline](#pipeline)
   * [Evidence of the Motivation](#evidence-of-the-motivation)
   * [What is Trump Talking About?](#what-is-trump-talking-about?)
   * [Daily Effects](#daily-effects)
@@ -28,10 +28,8 @@ Donald Trump has been known for being quite "outspoken" on his twitter, and I ha
 
 The indexes I used in this case are:
 
-* **S&P500**: Represents the performance of 500 companies listed on stock exchanges.
-
+* **S&P500**: Represents the performance of 500 large companies listed on stock exchanges.
 * **VIX**: Represents investor "fear". To quote Wikipedia, it "represents the expected range of movement in the S&P 500 index over the next month... For example, if the VIX is 15, this represents an expected annualized change, with a 68% probability, of less than 15% up or down."
-
 * **Soybean Futures**: Represents the price of 5,000 bushels of soybeans.  The reason I chose this index, was due to the fact that China is a major importer of US soybeans, so it has been greatly affected by the trade war.
 
 ## Data exploration
@@ -44,4 +42,12 @@ Where I got the data:
 * S&P500 and VIX Historical Data: [Yahoo! Finance](https://finance.yahoo.com/)
 * Soybean Futures Historical Data: [Investing.com](https://www.investing.com/)
 
-Once all the data was collected, I used pandas in order to get it into one dataframe, and proceeded to do all my calculations and tests after.
+Once all the data CSV files were collected, I used pandas in order to group them into dataframes, and proceeded to do all my calculations and tests after.
+
+### Evidence of the Motivation
+
+On August 23rd, at 10:57am, Trump proceeded to go on a twitter storm about the trade war with China.  Within 10 minutes, the Dow Jones Industrial Average had dropped 373 points.
+
+Here we can see an illustration of that fateful moment.
+
+<img src="plots/trumpaugust23.jpg" width="2185" height="1041">
