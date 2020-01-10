@@ -97,3 +97,9 @@ My first assumption was that Trump's tweets were correlated daily with the price
 <p align="center">
 <img src="plots/keyword_drop_correlation_heatmap.png" width="800" height="400">
 </p>
+
+I then did the same correlation with VIX instead of the S&P500, and the result was slightly more promising, albeit the correlation was still very weak.
+
+<p align="center">
+<img src="plots/vix_daily_correlation_heatmap.png" width="800" height="400">
+</p>
