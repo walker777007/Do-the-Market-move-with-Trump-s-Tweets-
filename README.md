@@ -88,7 +88,9 @@ In the plot below, we can see how many tweets Trump has been making, and it seem
 In this plot, we can see how many tweets on a given day are regarding the trade war, the federal reserve, and his impeachment.
 
 The keywords for trade_war: "Xi", "China", "Tariff", "NAFTA"  
+
 The keywords for fed: "Fed", "Federal Reserve", "Interest Rates", "Powell", "Inflation"
+
 The keywords for impeachment: "Impeach", "Witch"
 
 We can see a spike in the mentions of the trade war during the time period I spoke of earlier.  The spike in the federal reserve tweets occurred when the Fed lowered interest rates in September of 2019.  The mentions of impeachment, spiked dramatically once the Ukraine scandal became known and once Nancy Pelosi drafted the articles of impeachment.  Sad!
