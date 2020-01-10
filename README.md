@@ -52,3 +52,12 @@ Here we can see an illustration of that fateful moment.
 <p align="center">
 <img src="plots/trumpaugust23.png" width="800" height="400">
 </p>
+
+Another interesting specific case is on May 9th, 2019 China decided to cancel soybean orders responding to tariffs Trump introduced beginning in March.  As a result, soybean futures plummetted, and Trump's twitter exploded.
+
+ Here we can see an illustration this other fateful moment.
+
+<p align="center">
+<img src="plots/soybean_lows.png" width="800" height="215">
+<img src="plots/trade_war_may.png" width="800" height="215">
+ </p>
