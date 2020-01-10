@@ -136,5 +136,5 @@ To actually run a hypothesis test on whether Trump's tweets are correlated with 
 My null hypothesis is that weeks with a high percentage of tweets about the trade war (in the case of federal reserve, simply mentioning it at all) will have equal or less market volatility compared to weeks with low percentage of tweets about the trade war (in the case of federal reserve, no mentions).
 
 <p align="center">
-<img src="images/volatility_eqn.png" width="580" height="92">
+<img src="images/volatility_eqn.png" width="290" height="46">
 </p>
