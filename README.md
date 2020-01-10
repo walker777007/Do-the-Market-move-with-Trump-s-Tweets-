@@ -118,10 +118,23 @@ It appears that looking at daily effects are too random and arbitrary for severa
 <p align="center">
 <img src="images/volatility_eqn.png" width="269" height="19">
 </p>
- As well, instead of simply looking at the absolute numbers of tweets that were about the trade war or federal reserve, I decided to look at the percentage of tweets that week that were about those subjects.
+ VIX High simply denotes the maximum VIX value in that week, which can be understood as the maximum investor fear for the week.  As well, instead of simply looking at the absolute numbers of tweets that were about the trade war or federal reserve, I decided to look at the percentage of tweets that week that were about those subjects.
+
 
 This had an immediate noticeable effect on the correlation, which can be seen below.  The correlation coefficients for all 3 indexes were roughly about the same for the percentage of tweets about the trade war.
 
 <p align="center">
 <img src="plots/weekly_keyword_volatility_correlation_heatmap.png" width="800" height="550">
+</p>
+
+## Hypothesis Testing
+
+### Set-Up
+
+To actually run a hypothesis test on whether Trump's tweets are correlated with the volatility in the market, I split up the weeks with a high percentage of tweets relating to the trade war and weeks with a low percentage of tweets relating to the trade war into two separate distributions.  For the federal reserve, he doesn't tweet about it as often, so the 2 distributions were whether he tweets about it in a given week and if he doesn't.  
+
+My null hypothesis is that weeks with a high percentage of tweets about the trade war (in the case of federal reserve, simply mentioning it at all) will have equal or less market volatility compared to weeks with low percentage of tweets about the trade war (in the case of federal reserve, no mentions).
+
+<p align="center">
+<img src="images/volatility_eqn.png" width="580" height="92">
 </p>
