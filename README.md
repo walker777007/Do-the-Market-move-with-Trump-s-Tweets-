@@ -55,7 +55,7 @@ As we can see below, the market has been more volatile ever since.
 
 On May 30th, 2019, [Trump threatened to introduce tariffs](https://www.cnn.com/2019/05/30/investing/mexico-tariffs-stock-reactions/index.html) on Mexico unless they stop illegal immigration into America, the Dow Jones Industrial Average dropped 385 points that day.
 
-On August 23rd, at 10:57am, Trump proceeded to go on a twitter storm about the trade war with China.  Within 10 minutes, the Dow Jones Industrial Average had dropped 373 points.
+On August 23rd, 2019 at 10:57am, Trump proceeded to go on a twitter storm about the trade war with China.  Within 10 minutes, the Dow Jones Industrial Average had dropped 373 points.
 
 Here we can see an illustration of that fateful moment.
 <p align="center">
@@ -69,4 +69,14 @@ Another interesting specific case is on May 9th, 2019 China decided to cancel so
 <p align="center">
 <img src="plots/soybean_lows.png" width="800" height="215">
 <img src="plots/trade_war_may.png" width="800" height="215">
- </p>
+</p>
+
+### What is Trump Talking About?
+
+Before I went on to analyze his tweets in comparison to market movement, I thought it would be interesting to see what Trump has been tweeting about over the course of his presidency.
+
+<p align="center">
+<img src="plots/most_frequent_words.png" width="800" height="400">
+<img src="plots/numoftweets.png" width="800" height="215">
+<img src="plots/daily_keywords.png" width="800" height="400">
+</p>

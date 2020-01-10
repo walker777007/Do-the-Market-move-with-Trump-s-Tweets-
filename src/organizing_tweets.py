@@ -65,12 +65,13 @@ counter = Counter(word_list)
 frequent_words = {k:v for (k,v) in counter.items() if v > 500}
 frequent_words = {k: v for k, v in sorted(frequent_words.items(), key=lambda item: item[1])}
 
-"""plt.bar(frequent_words.keys(), frequent_words.values(), 0.75)
+plt.bar(frequent_words.keys(), frequent_words.values(), 0.75)
 plt.xticks(rotation='vertical')
 plt.title('Most Frequently Tweeted Words')
 plt.xlabel('Words')
 plt.ylabel('Count')
-plt.tight_layout()"""
+plt.tight_layout()
+#plt.savefig('C:/Users/walke/Documents/galvanize/capstones/Does-the-Market-move-with-Trump-s-Tweets-/plots/most_frequent_words.png', dpi=640)
 
 #%%
 
