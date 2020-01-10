@@ -49,5 +49,6 @@ Once all the data CSV files were collected, I used pandas in order to group them
 On August 23rd, at 10:57am, Trump proceeded to go on a twitter storm about the trade war with China.  Within 10 minutes, the Dow Jones Industrial Average had dropped 373 points.
 
 Here we can see an illustration of that fateful moment.
-
+<p align="center">
 <img src="plots/trumpaugust23.png" width="800" height="400">
+</p>
