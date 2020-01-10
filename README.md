@@ -87,11 +87,11 @@ In the plot below, we can see how many tweets Trump has been making, and it seem
 
 In this plot, we can see how many tweets on a given day are regarding the trade war, the federal reserve, and his impeachment.
 
-The keywords for trade_war: "Xi", "China", "Tariff", "NAFTA"  
+The keywords contained in trade_war: "Xi", "China", "Tariff", "NAFTA"  
 
-The keywords for fed: "Fed", "Federal Reserve", "Interest Rates", "Powell", "Inflation"
+The keywords contained in fed: "Fed", "Federal Reserve", "Interest Rates", "Powell", "Inflation"
 
-The keywords for impeachment: "Impeach", "Witch"
+The keywords contained in impeachment: "Impeach", "Witch"
 
 We can see a spike in the mentions of the trade war during the time period I spoke of earlier.  The spike in the federal reserve tweets occurred when the Fed lowered interest rates in September of 2019.  The mentions of impeachment, spiked dramatically once the Ukraine scandal became known and once Nancy Pelosi drafted the articles of impeachment.  Sad!
 <p align="center">
@@ -114,4 +114,14 @@ I then did the same correlation with VIX instead of the S&P500, and the result w
 
 ### Change Assumptions
 
-It appears that looking at daily effects are too random and arbitrary for several reasons.  The trends either caused by or correlated to the volume of Trump's tweets tend to be larger than a day by day basis.  As well, sometimes Trump will tweet a great deal about a subject on a given day, then have an off day.  Treating that 2nd day as independent of the 1st would not make as much sense, since the market has already moved in correlation with the prior day(s), and the market would be low/volatile despite the fact that Trump had not tweeted that day.  For this reason, I decided to group by what I call "Trading Week", which is Friday after market close to the next Friday close.  As well, instead of simply looking at the absolute numbers of tweets that were about the trade war or federal reserve, I decided to look at the percentage of tweets that week that were about those subjects.
+It appears that looking at daily effects are too random and arbitrary for several reasons.  The trends either caused by or correlated to the volume of Trump's tweets tend to be larger than a day by day basis.  As well, sometimes Trump will tweet a great deal about a subject on a given day, then have an off day.  Treating that 2nd day as independent of the 1st would not make as much sense, since the market has already moved in correlation with the prior day(s), and the market would be low/volatile despite the fact that Trump had not tweeted that day.  For this reason, I decided to group by what I call "Trading Week", which is Friday after market close to the next Friday close.  To calculate volatility, I simply took the maximum price of the week subtracted by the lowest price in the same week.
+<p align="center">
+<img src="images/volatility_eqn.png" width="269" height="19">
+</p>
+ As well, instead of simply looking at the absolute numbers of tweets that were about the trade war or federal reserve, I decided to look at the percentage of tweets that week that were about those subjects.
+
+This had an immediate noticeable effect on the correlation, which can be seen below.  The correlation coefficients for all 3 indexes were roughly about the same for the percentage of tweets about the trade war.
+
+<p align="center">
+<img src="plots/weekly_keyword_volatility_correlation_heatmap.png" width="800" height="550">
+</p>
