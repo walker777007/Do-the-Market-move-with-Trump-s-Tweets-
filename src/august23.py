@@ -17,11 +17,11 @@ import math
 style.use('seaborn')
 sns.set_style(style='darkgrid')
 
-sp500data = np.loadtxt("C:/Users/walke/Documents/galvanize/capstone1/sp500august23.csv",delimiter=',')
+sp500data = np.loadtxt("C:/Users/walke/Documents/galvanize/capstones/Does-the-Market-move-with-Trump-s-Tweets-/data/sp500august23.csv",delimiter=',')
 sp500time = sp500data[:,0]
 sp500price = sp500data[:,1]
 
-vixdata = np.loadtxt("C:/Users/walke/Documents/galvanize/capstone1/vixaugust23.csv",delimiter=',')
+vixdata = np.loadtxt("C:/Users/walke/Documents/galvanize/capstones/Does-the-Market-move-with-Trump-s-Tweets-/data/vixaugust23.csv",delimiter=',')
 vixtime = vixdata[:,0]
 vixprice = vixdata[:,1]
 
@@ -43,7 +43,7 @@ ax.set_title('S&P500 and VIX August 23, 2019')
 ax.set_xlabel('Hour (24hr time)')
 ax.set_ylabel('Normalized Price')
 ax.legend(loc=7)
-donald = mpimg.imread("C:/Users/walke/Documents/galvanize/capstone1/donald.jpg")
+donald = mpimg.imread("C:/Users/walke/Documents/galvanize/capstones/Does-the-Market-move-with-Trump-s-Tweets-/images/donald.jpg")
 imagebox = OffsetImage(donald, zoom=0.2)
 ab = AnnotationBbox(imagebox, (10.45, 0.7))
 ax.add_artist(ab)

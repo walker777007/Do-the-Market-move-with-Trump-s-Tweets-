@@ -33,7 +33,7 @@ ax10=sns.heatmap(corr,
 ax10.axis('equal')
 ax10.set_title('Correlation Heatmap')
 plt.tight_layout()
-fig10.savefig('keyword_drop_correlation_heatmap.png', dpi=640)
+fig10.savefig('/plots/keyword_drop_correlation_heatmap.png', dpi=640)
 
 sp500_tweets = day_counts.join(sp500)
 sp500_tweets = sp500_tweets.dropna()
@@ -67,7 +67,7 @@ ax12=sns.heatmap(corr,
 ax12.axis('equal')
 ax12.set_title('Correlation Heatmap')
 plt.tight_layout()
-fig12.savefig('weekly_keyword_volatility_correlation_heatmap.png', dpi=640)
+fig12.savefig('/plots/weekly_keyword_volatility_correlation_heatmap.png', dpi=640)
 
 high_trade_war_weeks = weekly_tweets_w_words.loc[weekly_tweets_w_words['trade_war_%']>0.031250]
 low_trade_war_weeks = weekly_tweets_w_words.loc[weekly_tweets_w_words['trade_war_%']<0.031250]
@@ -84,7 +84,7 @@ ax.set_xlabel('Soybean Volatility')
 ax.set_ylabel('Density')
 fig.text(.75, .5, 'P Value:0.0008, Reject the Null Hypothesis', ha='center')
 plt.tight_layout()
-fig.savefig('Weekly_Soybean_Hypothesis_Test.png', dpi=640)
+fig.savefig('/plots/Weekly_Soybean_Hypothesis_Test.png', dpi=640)
 
 fig,ax = plt.subplots()
 sns.distplot(low_trade_war_weeks['VIX High'],kde=False,norm_hist=True,bins=list(np.linspace(10,55,19)),ax=ax,label='Weeks with low % of tweets mentioning Trade War',hist_kws={"alpha": 0.5, "color": "r"})
@@ -95,7 +95,7 @@ ax.set_xlabel('VIX High')
 ax.set_ylabel('Density')
 fig.text(.75, .5, 'P Value:0.002, Reject the Null Hypothesis', ha='center')
 plt.tight_layout()
-fig.savefig('Weekly_VIX_Hypothesis_Test.png', dpi=640)
+fig.savefig('/plots/Weekly_VIX_Hypothesis_Test.png', dpi=640)
 
 fig,ax = plt.subplots()
 sns.distplot(low_trade_war_weeks['S&P500 Volatility'],kde=False,norm_hist=True,bins=list(np.linspace(0,240,21)),ax=ax,label='Weeks with low % of tweets mentioning Trade War',hist_kws={"alpha": 0.5, "color": "r"})
@@ -106,7 +106,7 @@ ax.set_xlabel('S&P500 Volatility')
 ax.set_ylabel('Density')
 fig.text(.75, .5, 'P Value:0.033, Reject the Null Hypothesis', ha='center')
 plt.tight_layout()
-fig.savefig('Weekly_S&P500_Hypothesis_Test.png', dpi=640)
+fig.savefig('/plots/Weekly_S&P500_Hypothesis_Test.png', dpi=640)
 
 high_fed_weeks = weekly_tweets_w_words.loc[weekly_tweets_w_words['fed_%']>0]
 low_fed_weeks = weekly_tweets_w_words.loc[weekly_tweets_w_words['fed_%']==0]
@@ -122,7 +122,7 @@ ax.set_xlabel('VIX High')
 ax.set_ylabel('Density')
 fig.text(.75, .5, 'P Value:0.016, Reject the Null Hypothesis', ha='center')
 plt.tight_layout()
-fig.savefig('Fed_Weekly_VIX_Hypothesis_Test.png', dpi=640)
+fig.savefig('/plots/Fed_Weekly_VIX_Hypothesis_Test.png', dpi=640)
 
 fig,ax = plt.subplots()
 sns.distplot(low_fed_weeks['S&P500 Volatility'],kde=False,norm_hist=True,bins=list(np.linspace(0,240,21)),ax=ax,label='Weeks with no tweets mentioning Federal Reserve',hist_kws={"alpha": 0.5, "color": "r"})
@@ -133,4 +133,4 @@ ax.set_xlabel('S&P500 Volatility')
 ax.set_ylabel('Density')
 fig.text(.75, .5, 'P Value:0.007, Reject the Null Hypothesis', ha='center')
 plt.tight_layout()
-fig.savefig('Fed_Weekly_S&P500_Hypothesis_Test.png', dpi=640)
+fig.savefig('/plots/Fed_Weekly_S&P500_Hypothesis_Test.png', dpi=640)

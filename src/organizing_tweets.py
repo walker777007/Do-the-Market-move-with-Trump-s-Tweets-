@@ -16,7 +16,7 @@ from collections import Counter
 style.use('seaborn')
 sns.set_style(style='darkgrid')
 
-tweets = pd.read_csv("C:/Users/walke/Documents/galvanize/capstone1/trumptweets.csv", quotechar='"',quoting=3)
+tweets = pd.read_csv("C:/Users/walke/Documents/galvanize/capstones/Does-the-Market-move-with-Trump-s-Tweets-/data/trumptweets.csv", quotechar='"',quoting=3)
 
 tweets = tweets.dropna()
 
@@ -126,14 +126,14 @@ keyword_counts[['impeachment','trade_war','fed']].plot(figsize=(15,4))
 plt.xlabel('Trading Day')
 plt.ylabel('# of Tweets')
 plt.tight_layout()
-plt.savefig('daily_keywords.png', dpi=640)
+plt.savefig('/plots/daily_keywords.png', dpi=640)
 
 keyword_counts[['trade_war']].plot(figsize=(15,4),color='g')
 plt.xlim(pd.to_datetime('01-01-2019'),pd.to_datetime('01-01-2020'))
 plt.xlabel('Trading Day')
 plt.ylabel('# of Tweets')
 plt.tight_layout()
-plt.savefig('trade_war_may.png', dpi=640)
+plt.savefig('/plots/trade_war_may.png', dpi=640)
 
 #Weekly
 weekly_tweets = tweets

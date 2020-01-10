@@ -16,7 +16,7 @@ style.use('seaborn')
 sns.set_style(style='darkgrid')
 
 #S&P500
-sp500 = pd.read_csv("C:/Users/walke/Documents/galvanize/capstone1/s&p500.csv")
+sp500 = pd.read_csv("C:/Users/walke/Documents/galvanize/capstones/Does-the-Market-move-with-Trump-s-Tweets-/data/s&p500.csv")
 
 sp500 = sp500.dropna()
 sp500['trading_day'] = pd.to_datetime(sp500['Date'])
@@ -47,7 +47,7 @@ weekly_sp500['Volatility'] = weekly_sp500['High']-weekly_sp500['Low']
 
 
 #DOW Industrial Avg
-dow = pd.read_csv("C:/Users/walke/Documents/galvanize/capstone1/dow.csv")
+dow = pd.read_csv("C:/Users/walke/Documents/galvanize/capstones/Does-the-Market-move-with-Trump-s-Tweets-/data/dow.csv")
 
 dow = dow.dropna()
 dow['trading_day'] = pd.to_datetime(dow['Date'])
@@ -64,7 +64,7 @@ dow['points_change'] = dow['Close']-dow['Open']
 dow = dow.set_index('trading_day')
 
 #Soybean Futures
-soybeans = pd.read_csv("C:/Users/walke/Documents/galvanize/capstone1/soybean.csv")
+soybeans = pd.read_csv("C:/Users/walke/Documents/galvanize/capstones/Does-the-Market-move-with-Trump-s-Tweets-/data/soybean.csv")
 
 soybeans = soybeans.dropna()
 soybeans['trading_day'] = pd.to_datetime(soybeans['Date'])
@@ -98,7 +98,7 @@ plt.xlim(pd.to_datetime('01-01-2019'),pd.to_datetime('01-01-2020'))
 plt.xlabel('Trading Day')
 plt.ylabel('Points')
 plt.tight_layout()
-plt.savefig('soybean_lows.png', dpi=640)
+plt.savefig('/plots/soybean_lows.png', dpi=640)
 
 weekly_soybeans = soybeans.reset_index()
 weekly_soybeans['trading_week'] = pd.to_datetime(weekly_soybeans['trading_day']) - pd.to_timedelta(6, unit='d')
@@ -112,7 +112,7 @@ weekly_soybeans = weekly_soybeans_highs.join(weekly_soybeans_lows)
 weekly_soybeans['Volatility'] = weekly_soybeans['High']-weekly_soybeans['Low']
 
 #VIX
-vix = pd.read_csv("C:/Users/walke/Documents/galvanize/capstone1/vix.csv")
+vix = pd.read_csv("C:/Users/walke/Documents/galvanize/capstones/Does-the-Market-move-with-Trump-s-Tweets-/data/vix.csv")
 
 vix = vix.dropna()
 vix['trading_day'] = pd.to_datetime(vix['Date'])
