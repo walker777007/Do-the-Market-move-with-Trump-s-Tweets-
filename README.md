@@ -13,7 +13,7 @@
 * [Motivation](#motivation)
 * [Data Exploration](#data-exploration)
   * [Pipeline](#pipeline)
-  * [Evidence of the Motivation](#evidence-of-the-motivation)
+  * [Evidence for the Motivation](#evidence-for-the-motivation)
   * [What is Trump Talking About?](#what-is-trump-talking-about?)
   * [Daily Effects](#daily-effects)
   * [Change Assumptions](#change-assumptions)
@@ -44,7 +44,16 @@ Where I got the data:
 
 Once all the data CSV files were collected, I used pandas in order to group them into dataframes, and proceeded to do all my calculations and tests after.
 
-### Evidence of the Motivation
+### Evidence for the Motivation
+
+The tariff period of Trump's presidency started in January of 2018, when he announced tariffs on solar panels and washing machines.  He would go on to announce additional tariffs on steel, aluminum, and goods at large from China.  
+
+As we can see below, the market has been more volatile ever since.
+<p align="center">
+<img src="plots/s&p500_percent_change.png" width="800" height="215">
+</p>
+
+On May 30th, 2019, [Trump threatened to introduce tariffs](https://www.cnn.com/2019/05/30/investing/mexico-tariffs-stock-reactions/index.html) on Mexico unless they stop illegal immigration into America, the Dow Jones Industrial Average dropped 385 points that day.
 
 On August 23rd, at 10:57am, Trump proceeded to go on a twitter storm about the trade war with China.  Within 10 minutes, the Dow Jones Industrial Average had dropped 373 points.
 
