@@ -138,3 +138,12 @@ My null hypothesis is that weeks with a high percentage of tweets about the trad
 <p align="center">
 <img src="images/hypotheses.png" width="290" height="46">
 </p>
+
+As we can see in all 5 cases below, we can reject the null hyothesis since our p values are all less than α=0.05.
+<p align="center">
+<img src="plots/Weekly_S&P500_Hypothesis_Test.png" width="800" height="550">
+<img src="plots/Weekly_VIX_Hypothesis_Test.png" width="800" height="550">
+<img src="plots/Weekly_Soybean_Hypothesis_Test.png" width="800" height="550">
+<img src="plots/Fed_Weekly_S&P500_Hypothesis_Test.png" width="800" height="550">
+<img src="plots/Fed_Weekly_VIX_Hypothesis_Test.png" width="800" height="550">
+</p>
