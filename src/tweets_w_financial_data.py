@@ -16,7 +16,7 @@ style.use('seaborn')
 sns.set_style(style='darkgrid')
 
 from organizing_tweets import day_sums,keyword_counts,day_counts,weekly_keyword_counts
-from organizing_financial_data import sp500,weekly_sp500,weekly_soybeans,weekly_vix
+from organizing_financial_data import sp500,vix,weekly_sp500,weekly_soybeans,weekly_vix
 
 sp500_words = day_sums.join(sp500)
 sp500_words = sp500_words.dropna()
@@ -37,6 +37,27 @@ fig10.savefig('C:/Users/walke/Documents/galvanize/capstones/Does-the-Market-move
 
 sp500_tweets = day_counts.join(sp500)
 sp500_tweets = sp500_tweets.dropna()
+
+vix_words = day_sums.join(vix)
+vix_words = vix_words.dropna()
+
+vix_tweets_w_words = keyword_counts.join(vix)
+vix_tweets_w_words = vix_tweets_w_words.dropna()
+vix_tweets_w_words = vix_tweets_w_words.rename(columns={"High": "VIX High"})
+
+vix_tweets = day_counts.join(vix)
+vix_tweets = vix_tweets.dropna()
+
+corr = vix_tweets_w_words[['trade_war','fed','impeachment','VIX High']].corr()
+fig11 = plt.figure(11)
+ax11 = fig11.add_subplot(111)
+ax11=sns.heatmap(corr, 
+        xticklabels=corr.columns,
+        yticklabels=corr.columns)
+ax11.axis('equal')
+ax11.set_title('Correlation Heatmap')
+plt.tight_layout()
+fig11.savefig('C:/Users/walke/Documents/galvanize/capstones/Does-the-Market-move-with-Trump-s-Tweets-/plots/vix_daily_correlation_heatmap.png', dpi=640)
 
 weekly_sp500_tweets_w_words = weekly_keyword_counts.join(weekly_sp500)
 weekly_sp500_tweets_w_words = weekly_sp500_tweets_w_words.dropna()
