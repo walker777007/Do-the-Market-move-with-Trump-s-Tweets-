@@ -1,5 +1,5 @@
-![](images/crazy-trump.jpg)
-![](images/downarrow.jpg)
+![](images/crazy-trump.jpg=750x325)
+![](images/downarrow.jpg=750x325)
 
 # Does the Market Move with Trump's Tweets?
 **Identifying how the market correlates with the content and volume of Trump's tweets**
