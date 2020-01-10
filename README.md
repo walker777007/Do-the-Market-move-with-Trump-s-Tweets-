@@ -75,8 +75,17 @@ Another interesting specific case is on May 9th, 2019 China decided to cancel so
 
 Before I went on to analyze his tweets in comparison to market movement, I thought it would be interesting to see what Trump has been tweeting about over the course of his presidency.
 
+In the plot below, we can see which words, ignoring nondescript words.  Unsurprisingly, words like big, very, and fake are used quite a lot.  As well, he used an exclamation point 8,648 times in his tweets!
 <p align="center">
 <img src="plots/most_frequent_words.png" width="800" height="400">
-<img src="plots/numoftweets.png" width="800" height="215">
-<img src="plots/daily_keywords.png" width="800" height="400">
+</p>
+
+In the plot below, we can see how many tweets Trump has been making, and it seems like he has just been tweeting more and more as his presidency goes on.  Wow!
+<p align="center">
+<img src="plots/numoftweets.png" width="800" height="400">
+</p>
+
+In this plot, we can see how many tweets on a given day are regarding the trade war, the federal reserve, and his impeachment.  We can see a spike in the mentions of the trade war during the time period I spoke of earlier.  The spike in the federal reserve tweets occurred when the Fed lowered interest rates in September of 2019.  The mentions of impeachment, spike dramatically once the Ukraine scandal became known and once Nancy Pelosi drafted the articles of impeachment.  Sad!
+<p align="center">
+<img src="plots/daily_keywords.png" width="800" height="215">
 </p>
