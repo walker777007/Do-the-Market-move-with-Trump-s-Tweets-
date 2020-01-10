@@ -1,3 +1,6 @@
+![](images/crazy-trump.jpg)
+![](images/downarrow.jpg)
+
 # Does the Market Move with Trump's Tweets?
 **Identifying how the market correlates with the content and volume of Trump's tweets**
 <br>Walker Stevens
