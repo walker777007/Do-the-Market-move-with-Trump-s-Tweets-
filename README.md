@@ -156,4 +156,4 @@ As we can see in all 5 cases below, we can reject the null hypothesis since our 
 Correlation != Causation.  Unfortunately I can’t say that Trump’s tweets are actually affecting market movement, seemingly outside of certain singular cases.  I can’t tell you when to buy or sell based on what he is saying, sadly.  However, it does appear that when Trump tweets a significant amount about the Trade War or about the Federal Reserve, the markets are more volatile.  Investors seem to be more “scared” when he tweets a lot.  Are they scared of his tweets or are the tweets in response to the fear?
 
 Some important questions that could explain the movement:
-Are the volume of his tweets representing new policy? Is he tweeting in response to poor market activity? Have investors become jaded enough that they are less concerned with what Trump is saying?
+Are the volume of his tweets representing new policy that is affecting the market? Is he tweeting in response to poor market activity? Have investors become jaded enough that they are less concerned with what Trump is saying 3 years into his presidency?
