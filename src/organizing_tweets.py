@@ -126,14 +126,15 @@ keyword_counts[['impeachment','trade_war','fed']].plot(figsize=(15,4))
 plt.xlabel('Trading Day')
 plt.ylabel('# of Tweets')
 plt.tight_layout()
-plt.savefig('/plots/daily_keywords.png', dpi=640)
+#plt.savefig('C:/Users/walke/Documents/galvanize/capstones/Does-the-Market-move-with-Trump-s-Tweets-/plots/daily_keywords.png', dpi=640)
 
 keyword_counts[['trade_war']].plot(figsize=(15,4),color='g')
 plt.xlim(pd.to_datetime('01-01-2019'),pd.to_datetime('01-01-2020'))
+plt.title('# of Tweets about Trade War')
 plt.xlabel('Trading Day')
 plt.ylabel('# of Tweets')
 plt.tight_layout()
-plt.savefig('/plots/trade_war_may.png', dpi=640)
+#plt.savefig('C:/Users/walke/Documents/galvanize/capstones/Does-the-Market-move-with-Trump-s-Tweets-/plots/trade_war_may.png', dpi=640)
 
 #Weekly
 weekly_tweets = tweets

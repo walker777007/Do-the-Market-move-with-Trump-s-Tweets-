@@ -34,6 +34,18 @@ sp500['points_change'] = sp500['Close']-sp500['Open']
 sp500 = sp500.set_index('trading_day')
 sp500 = sp500.drop(columns=['Date'])
 
+sp500[['percent_change']].plot(figsize=(15,4),color='indigo')
+plt.axvline(x=pd.to_datetime('01-23-2018'),color='red')
+plt.arrow(pd.to_datetime('12-15-2017'),2,30,0,width=0.15,color='k',head_width=0.5,head_length=3)
+props = dict(boxstyle='round', facecolor='white', alpha=0.5)
+plt.text(pd.to_datetime('8-01-2017'), 2.2, "Beginning of tariff period", fontsize=10,
+        verticalalignment='top', bbox=props)
+plt.title('Daily S&P500 Percent Change')
+plt.xlabel('Trading Day')
+plt.ylabel('Percent Change')
+plt.tight_layout()
+plt.savefig('C:/Users/walke/Documents/galvanize/capstones/Does-the-Market-move-with-Trump-s-Tweets-/plots/s&p500_percent_change.png', dpi=640)
+
 weekly_sp500 = sp500.reset_index()
 weekly_sp500['trading_week'] = pd.to_datetime(weekly_sp500['trading_day']) - pd.to_timedelta(6, unit='d')
 weekly_sp500 = weekly_sp500.groupby(['High', pd.Grouper(key='trading_week', freq='W-MON')])['Low'].max().reset_index().sort_values('trading_week')
@@ -95,10 +107,11 @@ soybeans = soybeans.set_index('trading_day')
 
 soybeans[['Low']].plot(figsize=(15,4))
 plt.xlim(pd.to_datetime('01-01-2019'),pd.to_datetime('01-01-2020'))
+plt.title('Soybean Lows')
 plt.xlabel('Trading Day')
 plt.ylabel('Points')
 plt.tight_layout()
-plt.savefig('/plots/soybean_lows.png', dpi=640)
+plt.savefig('C:/Users/walke/Documents/galvanize/capstones/Does-the-Market-move-with-Trump-s-Tweets-/plots/soybean_lows.png', dpi=640)
 
 weekly_soybeans = soybeans.reset_index()
 weekly_soybeans['trading_week'] = pd.to_datetime(weekly_soybeans['trading_day']) - pd.to_timedelta(6, unit='d')
